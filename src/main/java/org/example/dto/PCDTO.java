@@ -1,7 +1,5 @@
 package org.example.dto;
 
-import org.example.entity.PC;
-
 import java.util.Objects;
 
 public class PCDTO {

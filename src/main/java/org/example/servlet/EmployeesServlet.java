@@ -17,7 +17,7 @@ import java.util.List;
 public class EmployeesServlet extends HttpServlet {
     EmployeeService employeeService;
     @Override
-    public void init() throws ServletException {
+    public void init() {
         employeeService = (EmployeeService) getServletContext().getAttribute("employeeService");
     }
     @Override

@@ -21,7 +21,7 @@ public class EmployeeTaskServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         long taskId = Long.parseLong(req.getPathInfo().split("/")[3]);
         long employeeId = Long.parseLong(req.getPathInfo().split("/")[1]);
         try {
@@ -35,7 +35,7 @@ public class EmployeeTaskServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         long taskId = Long.parseLong(req.getPathInfo().split("/")[3]);
         try {
             Task updatedTask = TaskMapper.readJsonRequest(req);
@@ -48,7 +48,7 @@ public class EmployeeTaskServlet extends HttpServlet {
     }
 
     @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         long employeeId = Long.parseLong(req.getPathInfo().split("/")[1]);
         long taskId = Long.parseLong(req.getPathInfo().split("/")[3]);
         try {

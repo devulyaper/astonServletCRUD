@@ -23,20 +23,12 @@ public class TaskService {
         return taskRepository.getAllEmployeeTasks(employeeId);
     }
 
-    public Task getTaskById(long taskId) throws SQLException {
-        return taskRepository.getTaskById(taskId);
-    }
-
     public void addTask(Task task) throws SQLException {
         taskRepository.addTask(task);
     }
 
     public void updateTask(Task task) throws SQLException {
         taskRepository.updateTask(task);
-    }
-
-    public void deleteTask(long taskId) throws SQLException {
-        taskRepository.deleteTask(taskId);
     }
 
     public Task getEmployeeTaskById(long employeeId, long taskId) throws SQLException {

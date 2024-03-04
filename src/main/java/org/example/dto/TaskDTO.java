@@ -9,6 +9,7 @@ public class TaskDTO {
     private Long id;
     private String title;
     private String description;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate deadlineDate;
     private Long employeeId;
     private Boolean isDone;

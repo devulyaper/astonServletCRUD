@@ -17,7 +17,7 @@ import java.util.List;
 public class PCsServlet extends HttpServlet {
     PCService pcService;
     @Override
-    public void init() throws ServletException {
+    public void init() {
         pcService = (PCService) getServletContext().getAttribute("pcService");
     }
 

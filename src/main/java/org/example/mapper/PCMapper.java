@@ -1,11 +1,8 @@
 package org.example.mapper;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.dto.PCDTO;
-import org.example.dto.TaskDTO;
 import org.example.entity.PC;
-import org.example.entity.Task;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

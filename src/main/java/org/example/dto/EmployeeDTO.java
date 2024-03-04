@@ -1,7 +1,5 @@
 package org.example.dto;
 
-import org.example.entity.Employee;
-
 import java.util.Objects;
 
 public class EmployeeDTO {
